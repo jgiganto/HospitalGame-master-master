@@ -12,12 +12,12 @@ function arrastrar() {
     $("#draggable2").draggable();
     $("#draggable3").draggable();
     $("#draggable4").draggable();
-    $("div[id^='droppable']").droppable({
+    $("img[id^='droppable']").droppable({
         drop: function (event, ui) {
             $(this)
-                .addClass("ui-state-highlight")
+               // .addClass("ui-state-highlight")
                 //.find("p")
-                .html("TOCAO!")
+                //.html("TOCAO!")
                 .fadeOut(500, function () {
                    // $(this).remove();ss                 
             

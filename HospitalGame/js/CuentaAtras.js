@@ -8,10 +8,10 @@ function countdown(element, minutes, seconds) {
     x = PosicionAleatoriaX(50, 750);
     y = PosicionAleatoriaY(150, 420);
 
-
+   
     nombre = NombresDrop();
-    var drop = "<div id=" + nombre + "' class='ui-widget-header' style='position:fixed;top:" + y + "px;left:" + x + "px'>";
-    drop += "<p>" + datos + "</p><p>x:" + x + "y:" + y + "</p> </div>";
+    var drop = "<img src='/Imagenes/Enfermo4.png' id=" + nombre + "' class='ui-widget-header' style='position:fixed;top:" + y + "px;left:" + x + "px'/>";
+    
     // Fetch the display element
     var el = document.getElementById(element);
     // Set the timer
@@ -20,7 +20,7 @@ function countdown(element, minutes, seconds) {
         interval1 = setInterval(function () {
             if (seconds == 0) {
                 if (minutes == 0) {
-                    $("div[id^='droppable']").remove();
+                    $("img[id^='droppable']").remove();
                     clearInterval(interval1);
                     clearInterval(interval2);//1
                     
@@ -82,7 +82,7 @@ function countdown(element, minutes, seconds) {
                     //$("#btnmostrar").click();//3   
                     $("#dinamico").append(drop);
                     $("#boton").click(); //enviar asincrono
-                    $("div[id^='droppable']").fadeOut(EnfermoAleatorio(4000, 6000), function () {
+                    $("img[id^='droppable']").fadeOut(EnfermoAleatorio(4000, 6000), function () {
                         this.remove();
                     });
                     arrastrar();  
