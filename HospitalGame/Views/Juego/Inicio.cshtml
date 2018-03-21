@@ -230,7 +230,8 @@
                 $("#score").html(RestaScore());
                 $("#med1").html(medic1 += 1);
             }
-            if (medic1 <= 1) {
+            
+            if (medic1  <= 1) {
                 $("#medicina1").append(circuloam);
             }
         }
@@ -285,46 +286,46 @@
 <pruebas>
     @*<script>
 
-            var worker = new Worker('~/js/crearusuarios.js');
-            worker.postMessage("");
+                    var worker = new Worker('~/js/crearusuarios.js');
+                    worker.postMessage("");
+
+        
 
 
+                </script>
 
-
-        </script>
-
-        <script>
-            /*String saludo, int IDPaciente, String Nombre, String Apellido, int Edad, int Reloj,
-            int IDEnfermedad, String Baja, String Eliminado
-            function timedAlert(msg, timing){
-            setTimeout(function(){
-            alert(msg);
-            }, timing);
-            }
-            function yourFunction(time, counter){
-            for (var i = 1; i <= counter; i++) {
-            var msg = i, timing = i * time * 1000; //this is in seconds
-            timedAlert (msg, timing);
-            };
-            }
-            yourFunction(timeInSeconds, counter); // well here are the values of your choice.
-            setTimeout(function () {
-            alert("numero "+i);
-            setTimeout(function () {
-            alert("numero " + i);
-            $("#IDPaciente").val(i).delay(2000);
-            $("#Nombre").val(i);
-            $("#Apellido").val(i);
-            $("#Edad").val(i);
-            $("#Reloj").val(i);
-            $("#IDEnfermedad").val(i);
-            $("#Baja").val(i);
-            $("#Eliminado").val(i);
-            $("#boton").click();
-            }, 1000);
-            }, 1000);
-            */
-        </script>*@
+                <script>
+                    /*String saludo, int IDPaciente, String Nombre, String Apellido, int Edad, int Reloj,
+                    int IDEnfermedad, String Baja, String Eliminado
+                    function timedAlert(msg, timing){
+                    setTimeout(function(){
+                    alert(msg);
+                    }, timing);
+                    }
+                    function yourFunction(time, counter){
+                    for (var i = 1; i <= counter; i++) {
+                    var msg = i, timing = i * time * 1000; //this is in seconds
+                    timedAlert (msg, timing);
+                    };
+                    }
+                    yourFunction(timeInSeconds, counter); // well here are the values of your choice.
+                    setTimeout(function () {
+                    alert("numero "+i);
+                    setTimeout(function () {
+                    alert("numero " + i);
+                    $("#IDPaciente").val(i).delay(2000);
+                    $("#Nombre").val(i);
+                    $("#Apellido").val(i);
+                    $("#Edad").val(i);
+                    $("#Reloj").val(i);
+                    $("#IDEnfermedad").val(i);
+                    $("#Baja").val(i);
+                    $("#Eliminado").val(i);
+                    $("#boton").click();
+                    }, 1000);
+                    }, 1000);
+                    */
+                </script>*@
 </pruebas>
 <form method="post" id="formulario" name="formulario" hidden>
     Pon algo<br />

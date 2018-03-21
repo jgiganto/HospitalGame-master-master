@@ -19,7 +19,7 @@ function arrastrar() {
                 //.find("p")
                 //.html("TOCAO!")
                 .fadeOut(500, function () {
-                   // $(this).remove();ss                 
+                    //$(this).remove();               
             
                     $("img[id^='draggable']").mouseup(function () {
                         //alert($(this).attr("id").toString());
@@ -64,10 +64,11 @@ function arrastrar() {
                         }
                     });
                 });
+          
             $("#score").html(SumarScore()); //borrar?
-            // $(this).remove();  
+            $(this).attr("src", "/Imagenes/Sano.png"); 
             
-            
+             
           
              
         }     

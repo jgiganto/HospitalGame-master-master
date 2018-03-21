@@ -196,6 +196,7 @@
     <Content Include="Imagenes\Enfermo4.png" />
     <Content Include="Imagenes\Estrellaamarilla.png" />
     <Content Include="Imagenes\masok.jpg" />
+    <Content Include="Imagenes\Sano.png" />
     <Content Include="Imagenes\Trianguloamarillo.png" />
     <Content Include="js\arrastrar.js" />
     <Content Include="js\ClickBoton.js" />
